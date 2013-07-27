@@ -1,3 +1,8 @@
+Disclaimer
+==========
+This is an untested, unstable, alpha version. Use at your own risk.
+
+
 SVN rebase
 ==========
 A missing (?) functionality for svn.

@@ -235,7 +235,7 @@ class Rebaser{
       $this->logger->log("$command\n",Logger::IMPORTANT);
       $output = array();
       $return_value = 0;
-      exec($command,&$output,&$return_value);
+      exec($command,$output,$return_value);
       $this->logger->log(join("\n",$output)."\n",Logger::INFO);
       if($return_value){
         $this->logger->log("Non-zero exit code $return_value. User intervention required. Once you fix the problem, run again with --continue\n",Logger::ERROR);

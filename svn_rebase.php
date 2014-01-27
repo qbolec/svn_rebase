@@ -241,7 +241,7 @@ class Rebaser{
         $this->logger->log("Non-zero exit code $return_value. User intervention required. Once you fix the problem, run again with --continue\n",Logger::ERROR);
         exit(6);
       }else{
-        $this->save_plan(array_slice($plan,$i));
+        $this->save_plan(array_slice($plan,1+$i));
         $this->logger->log("OK\n",Logger::INFO);
       }
     }
